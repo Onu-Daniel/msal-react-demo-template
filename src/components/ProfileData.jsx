@@ -10,14 +10,14 @@ import MailIcon from '@mui/icons-material/Mail';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
-export const ProfileData = ({ graphData }) => {
+export const ProfileData = ({ displayData }) => {
     return (
         <List className="profileData">
-            <NameListItem name={graphData.displayName} />
-            <JobTitleListItem jobTitle={graphData.jobTitle} />
-            <MailListItem mail={graphData.mail} />
-            <PhoneListItem phone={graphData.businessPhones[0]} />
-            <LocationListItem location={graphData.officeLocation} />
+            <NameListItem name={displayData.displayName} />
+            <JobTitleListItem jobTitle={displayData.jobTitle} />
+            <MailListItem mail={displayData.mail} />
+            <PhoneListItem phone={displayData.businessPhones[0]} />
+            <LocationListItem location={displayData.officeLocation} />
         </List>
     );
 };

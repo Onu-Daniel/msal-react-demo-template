@@ -3,7 +3,7 @@ import { ProfileData } from "../components/ProfileData";
 export const Profile = () => {
     return (
         <>
-            <ProfileData graphData={{
+            <ProfileData displayData={{
                 displayName: 'Dummy Joe',
                 jobTitle: 'Dummy Title',
                 mail: 'dummy@mail.com',
